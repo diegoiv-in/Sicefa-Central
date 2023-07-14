@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Gestión de productos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>popo</h1>
-        <div>hola papa</div>
-        <h1>Daina te amo</h1>
-           <h1>Daina  eres el mejor</h1>
-             <h1>popo</h1>
-        <div>hola papa</div>
-        <h1>Daina te amo</h1>
-           <h1>Daina  eres el mejor</h1>
+        <
+        <div class="container width=80% ">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 m-3 mb-3">
+             
+               <h5>Agregar un nuevo producto</h5>
+               <br>
+                <form>
+                    <form action="action">
+                        input typ
+                    </form>
+                    <div class="mb-3" >
+                        <label class="form-label">Nombre del producto 
+                            <<input type="type" name="name">
+                            <div
+                            <input type="text" class="form-control" id="txtnomProd" name="txtnomProd" aria-describedby="emailHelp" size="50" required>
+                       </label>
+                       
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nombre genérico
+                        <input type="text" class="form-control" id="txtnomGen" name="txtnomGen" aria-describedby="emailHelp" size="50" required>
+                        </label>
+                       
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label  class="form-label">Precio
+                        <input type="text" class="form-control" id="txtprecio" name="txtprecio" aria-describedby="emailHelp" required>
+                        </label>
+                        
+                    </div>
+                    
+                </form>
+
+                <button type="button" class="btn btn-success" id="btnAgregar" onclick="agregarProducto();">Agregar</button>
+                <button type="button" class="btn btn-info" id="btnLimpiar" onclick="limpiar();">Limpiar</button>
+                <button type="button" class="btn btn-warning" id="btnModificar" onclick="modificaProducto();">Modificar</button>
+                <button type="button" class="btn btn-danger" id="btnEliminar" onclick="eliminarProducto();" >
+                    Eliminar</button>
+
+            </div> <!-- columna -->
+
+        
+            <div class="col">
+               <div class="table-responsive">
+               <br>
+               <h5>Lista de productos</h5>
+                <table class="table table-success align-middle ">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre del producto</th>
+                            <th scope="col">Nombre Técnico</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Estatus</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblProductos" >
+                        <div class="" id=""></div>
+                    </tbody>
+                </table>
+                </div>
+            </div><!-- col -->
+        </div><!-- row -->
+        </div> <!-- container -->
+     
+        <script src="js/script_producto.js"></script>
+     
     </body>
 </html>
