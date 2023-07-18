@@ -1,9 +1,88 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : 14 jul. 2023, 12:39:45
-    Author     : Diego
-*/
+body{
+  height: 100vh;
+  background:   #159895 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  margin-right: 
+  50px;
+}
+.card{
+ 
+  padding: 2%;
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 20px !important;
+ 
+ 
+}
+.usuario img{
+ 
+  width: 100px;
+}
+.usuario {
+  justify-content: center;
+ 
+}
+
+
+ .boton .btn {
+  border-radius: 15px;
+  color: #ececec;
+  background-color: #2C3E50;
+ 
+}
+
+
+.img-left{
+  width: 50%;
+  background: url('../Img/sicefa (1).png') center;
+  background-size: cover;
+}
+
+.card-body{
+  padding: 2rem;
+  background: #57C5B6;
+  padding: 2%;
+   margin: 10px;
+   border-radius: 20px;
+}
+
+.title{
+  margin-bottom: 2rem;
+}
+
+.form-input{
+  position: relative;
+}
+
+.form-input input{
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #00000020;
+  border-radius:10px;
+  outline: none;
+  background: transparent;
+}
+
+.form-input span{
+  position: absolute;
+  top: 10px;
+  padding-left: 15px;
+  color: #2C3E50;
+}
+label{
+  color: #ececec;
+  padding-left: 10px;
+ 
+}
+
+
 

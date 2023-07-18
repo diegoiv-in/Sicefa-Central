@@ -1,22 +1,112 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>Gestión de productos</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="Styles/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Styles/Estilo.css">
+        <title>title</title>
     </head>
-    <body>
+     <nav class="navbar navbar-expand-lg navbar-light  bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="">SICEFA</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class=" navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="" >Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mision"  onclick="iluminarCard('card1')" >Mision</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#vision"  onclick="iluminarCard('card2')" >Vision</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#valores"  onclick="iluminarCard('card3')" >Valores</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="Admin/index.html">Iniciar Sesion</a>
+              </li> 
+                   
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <br><br>
+      <div class="banner mt-3 "> 
         
-        <nav>
-            <a href="url" id="mision"></a>
-            <a href="url"></a>
-            <a href="url"></a>
-            <a href="Admin/Gestion Login/vista_Login.html">Iniciar sesion </a>
-        </nav>
-        
-        
-        
-        
+        <div class="img col-md-4  m-lg-2">
+                         
+            <img src="Styles/Img/sicefa (4).png" alt="Imagen" class="img-fluid  m-4">
+                
+               
+        </div>
+            
+           
+        </div>
+      
+      <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Nosotros: </h2>
+                        <p class="text-center"> Es una empresa dedicada  <br>a la venta de medicamentos genéricos y de patente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mision" class="col-12 col-md-12 col-lg-4">
+                    <div  onclick="iluminarCard('card1')" id="card1" class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="Styles/Img/objetivo.png" class="img-fluid img-small" alt="">
+                          </div>
+                            <h3 class="card-title">Mision:</h3>
+                            <p class="lead ">Nuestra misión es contribuir a la mejora de la salud y bienestar de nuestros clientes, así
+                                como proveer medicamentos y productos médicos con altos estándares de calidad y confiabilidad.
+                                </p>
+                            
+                        </div>
+                    </div>
+                    <br><!-- comment -->
+                </div>
+                <div id="vision" class="col-12 col-md-12 col-lg-4">
+                    <div id="card2"  onclick="iluminarCard('card2')" class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="Styles/Img/testigo.png" class="img-fluid img-small" alt="">
+                          </div>
+                            <h3 class="card-title">Vision:</h3>
+                            <p class="lead">Nuestra visión es ser una cadena de farmacias sostenible, ser considerada una de las
+                                empresas que brinden mayor seguridad y confianza en sus productos.
+                                </p>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div id="valores" class="col-12 col-md-12 col-lg-4">
+                    <div id="card3"  onclick="iluminarCard('card3')" class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="Styles/Img/propuesta-de-valor.png" class="img-fluid img-small" alt="">
+                          </div>
+                            <h3 class="card-title">Valores:</h3>
+                            <p class="lead">Confianza y seguridad: Ganarnos la confianza de nuestros clientes es nuestra prioridad, brindando productos y medicamentos seguros y confiables.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+        <script src="Styles/js/bootstrap.bundle.min.js"></script>
+         <script src="Js/codigo.js"></script>
     </body>
 </html>
