@@ -1,64 +1,49 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  
-
-  
-  <div class="container " >
-    <div class="row justify-content-center " >
-      <div class="col-lg-10  card flex-row "  >
-        
-
-        <div class="card-body " >
-          <div class="mb-4 usuario  d-flex " >
-              <img src="../Img/usuario.png" alt=""  class="img-fluid"  >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 card flex-row">
+                <div class="card-body">
+                    <div class="mb-4 usuario d-flex">
+                        <img src="../Img/usuario.png" alt="" class="img-fluid">
+                    </div>
+                    <form onsubmit="return validar()">
+                        <label for="">Usuario</label>
+                        <div class="form-input">
+                            <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" name="" placeholder="Usuario" tabindex="10" id="usuario" required>
+                        </div>
+                        <label for="">Contraseña</label>
+                        <div class="form-input">
+                            <span><i class="fa fa-key"></i></span>
+                            <input type="password" name="" placeholder="Contraseña" id="contraseña" required>
+                        </div>
+                        <div class="boton">
+                            <button class="btn btn-lg w-100 text-light">Iniciar Sesion</button>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center mb-2">
+                            ¿No tienes cuenta?
+                            <a href="#" class="register-link">
+                                Registrate aquí
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                <div class="img-left d-none d-md-flex"></div>
+            </div>
         </div>
-          <form onsubmit="return validar()">
-            <label for="" class="">Usuario</label>
-            <div class="form-input">
-              <span><i class="fa fa-user" aria-hidden="true"></i></span>
-              <input type="text" name="" placeholder="Usuario" tabindex="10"  id="usuario"required>
-            </div>
-            <label for="">Contrassseña</label>
-            <div class="form-input">
-              <span><i class="fa fa-key"></i></span>
-              <input type="password" name="" placeholder="Contraseña"  id="contraseña"required>
-            </div>
-
-        
-
-           <div class=" boton">
-        <button class="btn btn-lg  w-100  text-light">Iniciar Sesion</button>
-          </div>
-
-        
-
-            
-
-            <hr class="my-4">
-
-            <div class="text-center mb-2">
-              ¿No tienes cuenta?
-              <a href="#" class="register-link">
-              Registrate aquí
-              </a>
-            </div>
-          </form>
-        </div>
-        <div class="img-left d-none d-md-flex"></div>
-      </div>
     </div>
-  </div>
-  <script src="iniciarSesion.js"> </script>
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <script src="iniciarSesion.js"></script>
 </body>
 </html>
