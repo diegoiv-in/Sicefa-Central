@@ -4,7 +4,7 @@
 
       if (username === 'admin' && password === 'admin') {
         // Redireccionar a la página deseada
-        window.location.href = 'vista_Login.html';
+        window.location.href = '../index.html';
         return false; // Prevenir el envío normal del formulario
       } else {
         // Mostrar mensaje de error o realizar alguna otra acción

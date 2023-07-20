@@ -1,15 +1,223 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="../Styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Styles/gestionProductosStyles.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light   fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span class="">SICEFA</span></a>
+        
+          <div class="navbar-collapse justify-content-center " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 justify-content-center"> 
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="../GestionSucursal/vista_Sucursal.html">
+                       <i class="fa-solid fa-city"></i>
+                      Sucursales
+                    </a>
+                  </li>
+              <li class="nav-item marcar">
+                <a class="nav-link marcar" href="" >
+                    <i class="fa-solid fa-pills"></i>
+                    Productos/Medicamentos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mantenimiento();">
+                    <i class="fa-solid fa-window-restore"></i>
+                    Pedidios de compra
+                </a>
+            </li>
+            
+              <li class="nav-item ">
+                  <a class="nav-link  cerrar" href="../../index.html"> <i class="fa-solid fa-right-to-bracket"></i>Cerrar Sesion</a>
+              </li>
+            </ul>
+          </div>
+       
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  ></span>
+          </button>
+        </div>
+      </nav>
+      <br><br><br>
+      <h1 class="text-center ">Gestion Medicamentos</h1>
+      <div class="container">
+        <div class="row">
+         
+          <!-- Primera columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+         
+            <form class="text-start">
+              <div class="mb-3">
+                <label for="input11">Nombre del medicamento</label>
+                <input type="text" id="txtnomSuc" class="form-control" placeholder="Nombre del medicamento">
+              </div>
+              <div class="mb-3">
+                <label for="input12">Nombre generico</label>
+                <input type="text" id="txtnomTit" class="form-control" placeholder="Nombre generico">
+              </div>
+              <div class="mb-3">
+                <label for="input13">Forma farmaceutica</label>
+                <input type="text" id="txtRfc" class="form-control" placeholder="Forma farmaceutica">
+              </div>
+              <div class="mb-3">
+                <label for="input21">Unidad de medida</label>
+                <input type="text" id="txtcolonia" class="form-control" placeholder="Unidad de medida">
+              </div>
+       
+            </form>
+          </div>
+          <br><br>
+          <!-- Segunda columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+          
+            <form class="text-start">
+              <div class="mb-3">
+                <label for="input21">Contraindicaciones</label>
+                <input type="text" id="txtcolonia" class="form-control" placeholder="Contraindicaciones">
+              </div>
+              <div class="mb-3">
+                <label for="input22">Presentacion</label>
+                <input type="text" id="txtciudad" class="form-control" placeholder="Presentacion">
+              </div>
+              <div class="mb-3">
+                <label for="input23">Principal indicacion</label>
+                <input type="text" id="txtcodigoPostal" class="form-control" placeholder="Principal indicacion">
+              </div>
+              <div class="mb-3">
+                <label for="input32">Concentracion</label>
+                <input type="text" id="txtlongitud" class="form-control" placeholder="Concentracion">
+              </div>
+          
+            </form>
+          </div>
+    
+          <!-- Tercera columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <h5> Imagen </h5>
+            <img src="logo.png"  id="txtFoto"  name="txtFoto" class="rounded" alt="..." width="150">
+              <div class="mb-3">
+                <label for="input32">Selecciona la fotografía del medicamento </label>
+                <input type="file" id="txtlongitud" class="form-control" placeholder="Longitud">
+              </div>
+              <div class="mb-3">
+               
+              </div>
+              <div class="mb-3">
+                <label for="input33">Codigo de barras</label>
+                <input type="text" id="txtlatitud" class="form-control" placeholder="Codigo de barras">
+              </div>
+             
+            </form>
+          </div>
+
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <form class="text-start">
+              
+              <div class="mb-3">
+                <label for="input32">Unidades en
+                    envase
+                    </label>
+                <input type="text" id="txtdomicilio" class="form-control" placeholder="Unidades en
+                envase">
+              </div>
+     
+            </form>
+          </div>
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <form class="text-start">
+              
+              <div class="mb-3">
+                <label for="input32">Precio por unidad
+                </label>
+                <input type="text" id="txttelefono" class="form-control" placeholder="Precio por unidad">
+              </div>
+             
+             
+              
+            </form>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="d-flex justify-content-center mt-4">
+              <!-- Agregar botón "Agregar" -->
+              <button type="button" class="btn btn-success mx-2" id="btnAgregar" onclick="agregarProducto();">Agregar</button>
+              <!-- Agregar botón "Eliminar" -->
+              <button type="button" class="btn btn-danger mx-2" id="btnEliminar" onclick="eliminarSucursal();">Eliminar</button>
+              <!-- Agregar botón "Modificar" -->
+              <button type="button" class="btn btn-warning mx-2" id="btnModificar" onclick="modificaSucursal();">Modificar</button>
+              <!-- Agregar botón "Limpiar" -->
+              <button type="button" class="btn btn-secondary mx-2" id="btnLimpiar" onclick="limpiar();">Limpiar</button>
+            </div>
+          </div>
+          
+       
+            <div class="row mt-4">
+                <div class="col-sm-12">
+                    <!-- Agregar formulario de búsqueda -->
+                    <nav class="navbar navbar1 navbar-light">
+                      <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="txtBusquedaCliente">
+                          <button class="btn btn-outline-success btn-sm" type="button"  onclick="searchCliente();">Buscar</button>
+                        </form>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <h5 class="list">Lista de productos</h5>
+                <div class="table-responsive">
+                    <table class="table  ">
+                        <thead>
+                            <tr class="encabezado">
+                                <th scope="col">#</th>
+                            <th scope="col">Nombre del producto</th>
+                            <th scope="col">Nombre Técnico</th>
+                            <th scope="col">Forma farmacéutica</th>
+                            <th scope="col">Unidad de medida</th>
+                            <th scope="col">Presentación</th>
+                            <th scope="col">Principal indicación</th>
+                            <th scope="col">Contraindicación</th>
+                            <th scope="col">Concentración</th>
+                            <th scope="col">Unidades de envase</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">foto</th>
+                            <th scope="col">Ruta de la foto</th>
+                            <th scope="col">Código de barras</th>
+                            <th scope="col">Estatus</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblProductos"  class="" >
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> 
+      </div>
+
+     
+        
+ 
+     
+      <script src="../GestionProductos/controlador_Productos.js "></script>
+      <script src="../Styles/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+</body>
 </html>
+
+<!--for getting the form download the code from download button-->

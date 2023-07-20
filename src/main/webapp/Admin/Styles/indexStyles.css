@@ -6,8 +6,12 @@
 .navbar{
 	background-color: #2C3E50;
 }
-
-
+i{
+	margin-right: 5px;
+}
+.navbar-toggler{
+	background-color: white;
+}
 .navbar-nav a {
 	font-size: 15px;
 	text-transform: uppercase;
