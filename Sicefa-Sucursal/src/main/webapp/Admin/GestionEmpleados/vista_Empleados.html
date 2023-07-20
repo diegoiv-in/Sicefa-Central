@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="../Styles/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Styles/gestionClientesStyles.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light   fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span class="">SICEFA</span></a>
+        
+          <div class="navbar-collapse justify-content-center " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 justify-content-center"> 
+              
+                  
+              <li class="nav-item">
+                  <a class="nav-link" href="" >    <i class="fa-solid fa-clipboard-list"></i>Pedidos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="mantenimiento();">  <i class="fa-solid fa-cart-plus"></i>Ventas</a>
+              </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " href="../GestionClientes/vista_Clientes.html" >   <i class="fa-solid fa-user"></i>Clientes</a>
+            </li>
+                 <li class="nav-item marcar">
+                <a class="nav-link marcar" href="#" >   <i class="fa-solid fa-user"></i>Empleados</a>
+            </li>
+                 <li class="nav-item">
+                <a class="nav-link" href="#" >   <i class="fa-solid fa-window-restore"></i>Stock productos</a>
+            </li>
+              <li class="nav-item ">
+                  <a class="nav-link justify-content-end" href="../index.html"> <i class="fa-solid fa-right-to-bracket"></i>Cerrar Sesion</a>
+              </li>
+            </ul>
+          </div>
+       
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"  ></span>
+          </button>
+        </div>
+      </nav>
+      <br><br><br>
+      <h1 class="text-center ">Gestion Empleados</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+       
+              
+              <h5>Foto</h5>
+              <img src="img/sicefa (1)_1.png"  id="txtFoto"  name="txtFoto" class="rounded" alt="..." width="150">
+    
+          </div>
+             <div class="col-md-4 d-flex flex-column justify-content-center">
+          
+            
+          </div>
+             <div class="col-md-4 d-flex flex-column justify-content-center">
+               
+            
+          </div>
+          <!-- Primera columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+             
+            <form class="text-start">
+             
+              
+              <div class="mb-3">
+                <label for="input13">Nombre</label>
+                <input type="text" id="txtRfc" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                  <label for="input13">Apelldio Paterno</label>
+                <input type="text" id="txtRfc" class="form-control" placeholder="Apelldio Paterno">
+               
+                 
+              </div>
+        <div class="mb-1">
+                <label for="input32">Apellido Materno </label>
+                   
+                <input type="text" id="txtdomicilio" class="form-control" placeholder="Apellido Materno ">
+              </div>
+     
+            
+          </div>
+          <br><br>
+          <!-- Segunda columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+          
+              <br>
+            
+              <div class="mb-3">
+                <label for="input22">Fecha de Nacimiento</label>
+                <input type="date" id="txtciudad" class="form-control" placeholder="Curp">
+              </div>
+              <div class="mb-3">
+                <label for="input23">RFC</label>
+                <input type="text" id="txtcodigoPostal" class="form-control" placeholder="RFC">
+              </div>
+              <div class="mb-3">
+                <label for="input32">Curp</label>
+                <input type="text" id="txtlongitud" class="form-control" placeholder="Curp">
+              </div>
+              
+                <div class="mb-3" >
+                    
+                </div>
+            
+          </div>
+          <!-- Tercera columna -->
+          <div class="col-md-4 d-flex flex-column justify-content-center">
+            <form>
+ 
+              <div class="mb-3">
+               
+              </div>
+              <div class="mb-3">
+              <label for="input32">Telefono</label>
+                <input type="text" id="txtlongitud" class="form-control" placeholder="Telefono">
+              </div>
+                
+                <div class="mb-3">
+               <label for="estado">Estado:</label>
+                    <select id="txtestadoC" class="form-select">
+                     <option value="">-- Selecciona un estado --</option>
+                     <option value="Aguascalientes">Aguascalientes</option>
+                     <option value="Baja california">Baja california</option>
+                     <option value="Baja california sur">Baja california sur</option>
+                     <option value="Campeche">Campeche</option>
+                     <option value="Coahuila">Coahuila</option>
+                     <option value="Colima">Colima</option>
+                     <option value="Chiapas">Chiapas</option>
+                     <option value="Chihuahua">Chihuahua</option>
+                     <option value="Distrito federal">Distrito federal</option>
+                     <option value="Durango">Durango</option>
+                     <option value="Guanajuato">Guanajuato</option>
+                     <option value="Guerrero">Guerrero</option>
+                     <option value="Hidalgo">Hidalgo</option>
+                     <option value="Jalisco">Jalisco</option>
+                     <option value="México">México</option>
+                     <option value="Michoacan">Michoacan</option>
+                     <option value="Morelos">Morelos</option>
+                     <option value="Nayarit">Nayarit</option>
+                     <option value="Nuevo león">Nuevo león</option>
+                     <option value="Oaxaca">Oaxaca</option>
+                     <option value="Puebla">Puebla</option>
+                     <option value="Queretaro">Queretaro</option>
+                     <option value="Quintana roo">Quintana roo</option>
+                     <option value="San luis potosi">San luis potosi</option>
+                     <option value="Sinaloa">Sinaloa</option>
+                     <option value="Sonora">Sonora</option>
+                     <option value="Tabasco">Tabasco</option>
+                     <option value="Taumalipas">Taumalipas</option>
+                     <option value="Tlaxcala">Tlaxcala</option>
+                     <option value="Veracruz">Veracruz</option>
+                     <option value="Yucatan">Yucatan</option>
+                     <option value="Zacatecas">Zacatecas</option>
+                     <option value="Nacido en el extranjero">Nacido en el extranjero</option>
+                    </select>
+              </div>
+                  <div class="mb-4">
+                <label for="input32">CP </label>
+                   
+                <input type="text" id="txtdomicilio" class="form-control" placeholder="CP">
+              </div>
+           
+                </form>
+          </div>
+
+           <div class="col-md-4 d-flex flex-column justify-content-center">
+          
+            <div class="mt-0">
+                  <label for="ciudades">Genero:</label>
+                <select id="txtestado" class="form-select">
+                  <option value="">-- Selecciona un genero --</option>
+                 <option value="Hombre">Hombre</option> 
+                  <option value="Mujer">Mujer</option> 
+                  <option value="Otro">Otro</option> 
+                   </select>
+              </div>
+          </div>
+     
+        
+        </div>
+        <div class="row">
+          <div class="d-flex justify-content-center mt-4">
+              <!-- Agregar botón "Agregar" -->
+              <button type="button" class="btn btn-success mx-2" id="btnAgregar" onclick="agregarProducto();">Agregar</button>
+              <!-- Agregar botón "Eliminar" -->
+              <button type="button" class="btn btn-danger mx-2" id="btnEliminar" onclick="eliminarSucursal();">Eliminar</button>
+              <!-- Agregar botón "Modificar" -->
+              <button type="button" class="btn btn-warning mx-2" id="btnModificar" onclick="modificaSucursal();">Modificar</button>
+              <!-- Agregar botón "Limpiar" -->
+              <button type="button" class="btn btn-secondary mx-2" id="btnLimpiar" onclick="limpiar();">Limpiar</button>
+            </div>
+          </div>
+          
+       
+            <div class="row mt-4">
+                <div class="col-sm-12">
+                    <!-- Agregar formulario de búsqueda -->
+                    <nav class="navbar navbar1 navbar-light">
+                      <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="txtBusquedaCliente">
+                          <button class="btn btn-outline-success btn-sm" type="button"  onclick="searchCliente();">Buscar</button>
+                        </form>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="row mt-4">
+            <div class="col-sm-12">
+                <h5 class="list">Lista de productos</h5>
+                <div class="table-responsive">
+                    <table class="table  ">
+                        <thead>
+                            <tr class="encabezado">
+                              <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido Paterno</th>
+                            <th scope="col">Apellido Materno</th>
+                            <th scope="col">Genero</th>
+                            <th scope="col">Fecha de Nacimiento</th>
+                            <th scope="col">RFC</th>
+                            <th scope="col">CURP</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">CP</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Estatus</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblProductos"  class="" >
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> 
+      </div>
+
+     
+        
+ 
+     
+      <script src="../GestionClientes/controlador_Clientes.js "></script>
+      <script src="../Styles/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+</body>
+</html>
+
+<!--for getting the form download the code from download button-->
