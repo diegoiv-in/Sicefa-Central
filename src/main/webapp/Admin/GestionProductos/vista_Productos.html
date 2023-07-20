@@ -60,20 +60,20 @@
          
             <form class="text-start">
               <div class="mb-3">
-                <label for="input11">Nombre del medicamento</label>
-                <input type="text" id="txtnomSuc" class="form-control" placeholder="Nombre del medicamento">
+               <label for="input11">Nombre del medicamento</label>
+                <input type="text" id="txtnomProd" class="form-control" placeholder="Nombre del medicamento">
               </div>
               <div class="mb-3">
                 <label for="input12">Nombre generico</label>
-                <input type="text" id="txtnomTit" class="form-control" placeholder="Nombre generico">
+                <input type="text" id="txtnomGen" class="form-control" placeholder="Nombre generico">
               </div>
               <div class="mb-3">
                 <label for="input13">Forma farmaceutica</label>
-                <input type="text" id="txtRfc" class="form-control" placeholder="Forma farmaceutica">
+                <input type="text" id="txtformfarm" class="form-control" placeholder="Forma farmaceutica">
               </div>
               <div class="mb-3">
                 <label for="input21">Unidad de medida</label>
-                <input type="text" id="txtcolonia" class="form-control" placeholder="Unidad de medida">
+                <input type="text" id="txtundme" class="form-control" placeholder="Unidad de medida">
               </div>
        
             </form>
@@ -85,19 +85,19 @@
             <form class="text-start">
               <div class="mb-3">
                 <label for="input21">Contraindicaciones</label>
-                <input type="text" id="txtcolonia" class="form-control" placeholder="Contraindicaciones">
+                <input type="text" id="txtcontra" class="form-control" placeholder="Contraindicaciones">
               </div>
               <div class="mb-3">
                 <label for="input22">Presentacion</label>
-                <input type="text" id="txtciudad" class="form-control" placeholder="Presentacion">
+                <input type="text" id="txtpres" class="form-control" placeholder="Presentacion">
               </div>
               <div class="mb-3">
                 <label for="input23">Principal indicacion</label>
-                <input type="text" id="txtcodigoPostal" class="form-control" placeholder="Principal indicacion">
+                <input type="text" id="txtpriind" class="form-control" placeholder="Principal indicacion">
               </div>
               <div class="mb-3">
                 <label for="input32">Concentracion</label>
-                <input type="text" id="txtlongitud" class="form-control" placeholder="Concentracion">
+                <input type="text" id="txtconcen" class="form-control" placeholder="Concentracion">
               </div>
           
             </form>
@@ -109,14 +109,14 @@
             <img src="logo.png"  id="txtFoto"  name="txtFoto" class="rounded" alt="..." width="150">
               <div class="mb-3">
                 <label for="input32">Selecciona la fotografía del medicamento </label>
-                <input type="file" id="txtlongitud" class="form-control" placeholder="Longitud">
+                <input type="file" id="archivo" class="form-control" placeholder="Longitud">
               </div>
               <div class="mb-3">
                
               </div>
               <div class="mb-3">
                 <label for="input33">Codigo de barras</label>
-                <input type="text" id="txtlatitud" class="form-control" placeholder="Codigo de barras">
+                <input type="text" id="txtcodebar" class="form-control" placeholder="Codigo de barras">
               </div>
              
             </form>
@@ -129,8 +129,7 @@
                 <label for="input32">Unidades en
                     envase
                     </label>
-                <input type="text" id="txtdomicilio" class="form-control" placeholder="Unidades en
-                envase">
+                <input type="text" id="txtunenva" class="form-control" placeholder="Unidades en envase">
               </div>
      
             </form>
@@ -141,7 +140,7 @@
               <div class="mb-3">
                 <label for="input32">Precio por unidad
                 </label>
-                <input type="text" id="txttelefono" class="form-control" placeholder="Precio por unidad">
+                <input type="text" id="txtprecio" class="form-control" placeholder="Precio por unidad">
               </div>
              
              
@@ -153,11 +152,11 @@
         <div class="row">
           <div class="d-flex justify-content-center mt-4">
               <!-- Agregar botón "Agregar" -->
-              <button type="button" class="btn btn-success mx-2" id="btnAgregar" onclick="agregarProducto();">Agregar</button>
+              <button type="button" class="btn btn-success mx-2" id="btnAgregar" onclick="agregarProducto2();">Agregar</button>
               <!-- Agregar botón "Eliminar" -->
-              <button type="button" class="btn btn-danger mx-2" id="btnEliminar" onclick="eliminarSucursal();">Eliminar</button>
+              <button type="button" class="btn btn-danger mx-2" id="btnEliminar" onclick="eliminarProducto()">Eliminar</button>
               <!-- Agregar botón "Modificar" -->
-              <button type="button" class="btn btn-warning mx-2" id="btnModificar" onclick="modificaSucursal();">Modificar</button>
+              <button type="button" class="btn btn-warning mx-2" id="btnModificar" onclick="modificaProducto();">Modificar</button>
               <!-- Agregar botón "Limpiar" -->
               <button type="button" class="btn btn-secondary mx-2" id="btnLimpiar" onclick="limpiar();">Limpiar</button>
             </div>
@@ -170,8 +169,8 @@
                     <nav class="navbar navbar1 navbar-light">
                       <div class="container-fluid">
                         <form class="d-flex" role="search">
-                          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="txtBusquedaCliente">
-                          <button class="btn btn-outline-success btn-sm" type="button"  onclick="searchCliente();">Buscar</button>
+                          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="txtBusquedaProducto">
+                          <button class="btn btn-outline-success btn-sm" type="button"  onclick="searchProducto();">Buscar</button>
                         </form>
                       </div>
                     </nav>

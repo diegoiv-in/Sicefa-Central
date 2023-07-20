@@ -125,11 +125,11 @@
               newProd.telefono= telefono,
               newProd.estado= estado,
               newProd.longitud= longitud,
-              newProd.latitud= latitud
+              newProd.latitud= latitud,
               newProd.estatus="Activo";
               obj.sucursales.push(newProd);
                 
-              alertGoodJobs()
+              alertGoodJobs();
               limpiar();
               actualizaTabla();
           }
@@ -182,7 +182,7 @@
             newProd.telefono= telefono,
             newProd.estado= estado,
             newProd.longitud= longitud,
-            newProd.latitud= latitud
+            newProd.latitud= latitud,
             newProd.estatus="Activo";
            obj.sucursales[indexProductoSeleccionado] = newProd;
            
