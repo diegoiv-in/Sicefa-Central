@@ -4,6 +4,8 @@
         var text = '{"sucursales":[ ' +
           '{ "nomSuc" :"Sicefa Galerias", "nomTit"  : "Armando ", "rfc"  : "FC29D837", "domicilio"  : "calle orquidea #108", "colonia"  : "Santa rosa ","ciudad"  : "Leon", "codigoPostal"  : "37680", "telefono"  : "4772902221","estado"  : "Guanajuato","longitud"  : "-12330","latitud"  : "-34567","estatus" : "Activo"},' +
           '{ "nomSuc" :"Sicefa Altacia", "nomTit"  : "Jimena ", "rfc"  : "HI35837", "domicilio"  : "Av orquidea #108", "colonia"  : "Santa rosa ","ciudad"  : "Leon", "codigoPostal"  : "37680", "telefono"  : "4772902221","estado"  : "Guanajuato","longitud"  : "-12330","latitud"  : "-34567","estatus" : "Activo"},' +
+          '{ "nomSuc" :"Sicefa Norte", "nomTit"  : "Jonathan ", "rfc"  : "JML4323", "domicilio"  : "Independencia #1142", "colonia"  : "Santa Miguel ","ciudad"  : "Leon", "codigoPostal"  : "37390", "telefono"  : "4771170214","estado"  : "Guanajuato","longitud"  : "-1456","latitud"  : "-5431","estatus" : "Activo"},' +
+          '{ "nomSuc" :"Sicefa Sur", "nomTit"  : "Pedro ", "rfc"  : "PED3837", "domicilio"  : "Miunich #221", "colonia"  : "El faro","ciudad"  : "Leon", "codigoPostal"  : "37490", "telefono"  : "4771145213","estado"  : "Michoacán","longitud"  : "-2375","latitud"  : "-19381","estatus" : "Activo"},' +
           '{ "nomSuc" :"Sicefa Centro Max", "nomTit"  : "Rafael ", "rfc"  : "KD76KE07", "domicilio"  : "calle alamos #302", "colonia"  : "Los lopez ","ciudad"  : "Acapulco", "codigoPostal"  : "38690", "telefono"  : "4772956985","estado"  : "Guerrero","longitud"  : "-36330","latitud"  : "-37567","estatus" : "Activo"}] }';
         
       

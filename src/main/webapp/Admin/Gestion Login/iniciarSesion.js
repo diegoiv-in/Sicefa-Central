@@ -1,4 +1,4 @@
- function validar() {
+function validar() {
       const username = document.getElementById('usuario').value;
       const password = document.getElementById('contraseña').value;
 
@@ -8,7 +8,7 @@
         return false; // Prevenir el envío normal del formulario
       } else {
         // Mostrar mensaje de error o realizar alguna otra acción
-        alert('Usuario o contraseña incorrectos');
+        Swal.fire('Contraseña incorrecta', 'Intente de nuevo', 'error');
         return false; // Prevenir el envío normal del formulario
       }
     }
