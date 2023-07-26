@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	background-color: #DDE6ED;
+}
+.navbar{
+
+	background-color: #2C3E50;
+}
+h1{
+	text-transform: uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.navbar1{
+	
+	background-color: #DDE6ED!important;
+}
+.table{
+background-color: #fffbfb;
+}
+
+/* Estilo para los elementos input */
+input.form-control {
+	color: #000000;
+	border-radius: 35px;
+	 /* Establecer el fondo del input como transparente */
+	 /* Eliminar el borde del input (opcional) */
+	
+  }
+
+  th{
+	font-size: 15px;
+	text-align:center;
+  }
+  /* Estilo para los elementos input */
+input::placeholder {
+	color: rgba(10, 7, 7, 0.336) !important; /* Establecer el color del placeholder en blanco */
+  }
+ .encabezado{
+	background-color: #2C3E50;
+	color: #DDE6ED;
+ } 
+
+.btn{
+
+	border-radius: 10px;
+}
+.navbar-toggler{
+	background-color: white;
+}
+.form-select{
+	color: rgb(0, 0, 0);
+	border-radius: 35px;
+	
+	
+}
+i{
+	margin-right: 5px;
+}
+
+.form-select{
+	border-radius: 25px;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-right: 70px;
+	color: #f5f5f5 !important;
+	
+}
+.cerrar{
+	color: #f5f5f5;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+
+	color: #f5f5f5 !important;
+}
+.cerrar:hover {
+  
+	border-bottom: 3px solid  #2ebd94;
+	
+  }
+
+.navbar-nav .nav-link:hover {
+  
+	border-bottom: 3px solid  #2ebd94;
+	
+  }
+  label{
+
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 20px;
+	color: #2C3E50 !important;
+  }
+table {
+	
+	color: #2C3E50 !important;
+}
+
+.navbar-light .navbar-brand {
+	
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+
+span{
+	color: #2ebd94;
+}
+
+
+  
+  .nav-link.marcar {
+	border-bottom: 3px solid  #2ebd94;
+  }
+  
